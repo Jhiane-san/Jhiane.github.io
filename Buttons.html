@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>50 Buttons</title>
+    <style>
+    
+            html, body {
+            overflow-x: hidden;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: "Varela Round", sans-serif;
+            background: White;
+            color: ;
+        }
+          
+            
+.header {
+    width: 100%;
+    background: linear-gradient(90deg, #2E3192, #1BFFFF);
+    position: fixed;
+    top: 0;
+    height: 60px;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+ }   
+     
+             .home-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0; 
+    background: white;
+  
+}
+
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+}
+
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        
+        .btn-1 { background-color: #FF5733; }
+        .btn-2 { background-color: #33FF57; }
+        .btn-3 { background-color: #5733FF; }
+        .btn-4 { background-color: #FFC300; }
+        .btn-5 { background-color: #DAF7A6; }
+        .btn-6 { background-color: #C70039; }
+        .btn-7 { background-color: #900C3F; }
+        .btn-8 { background-color: #581845; }
+        .btn-9 { background-color: #1ABC9C; }
+        .btn-10 { background-color: #2ECC71; }
+        .btn-11 { background-color: #3498DB; }
+        .btn-12 { background-color: #9B59B6; }
+        .btn-13 { background-color: #34495E; }
+        .btn-14 { background-color: #16A085; }
+        .btn-15 { background-color: #27AE60; }
+        .btn-16 { background-color: #2980B9; }
+        .btn-17 { background-color: #8E44AD; }
+        .btn-18 { background-color: #2C3E50; }
+        .btn-19 { background-color: #F39C12; }
+        .btn-20 { background-color: #D35400; }
+        .btn-21 { background-color: #E74C3C; }
+        .btn-22 { background-color: #C0392B; }
+        .btn-23 { background-color: #BDC3C7; }
+        .btn-24 { background-color: #7F8C8D; }
+        .btn-25 { background-color: #2E4053; }
+        .btn-26 { background-color: #1C2833; }
+        .btn-27 { background-color: #AED6F1; }
+        .btn-28 { background-color: #76D7C4; }
+        .btn-29 { background-color: #F7DC6F; }
+        .btn-30 { background-color: #F1948A; }
+        .btn-31 { background-color: #D7BDE2; }
+        .btn-32 { background-color: #F0B27A; }
+        .btn-33 { background-color: #E59866; }
+        .btn-34 { background-color: #85929E; }
+        .btn-35 { background-color: #34495E; }
+        .btn-36 { background-color: #FAD7A0; }
+        .btn-37 { background-color: #73C6B6; }
+        .btn-38 { background-color: #E6B0AA; }
+        .btn-39 { background-color: #A569BD; }
+        .btn-40 { background-color: #1F618D; }
+        .btn-41 { background-color: #B03A2E; }
+        .btn-42 { background-color: #566573; }
+        .btn-43 { background-color: #117864; }
+        .btn-44 { background-color: #138D75; }
+        .btn-45 { background-color: #6C3483; }
+        .btn-46 { background-color: #7D3C98; }
+        .btn-47 { background-color: #A04000; }
+        .btn-48 { background-color: #BA4A00; }
+        .btn-49 { background-color: #F5CBA7; }
+        .btn-50 { background-color: #F7F9F9; color: #000; }
+           
+           .main {
+    margin-top: 60px;
+}
+
+        .mainInner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        #sidebarMenu {
+            height: 100%;
+            position: fixed;
+            left: 0;
+            width: 250px;
+            margin-top: 60px;
+            transform: translateX(-100%);
+            transition: transform 250ms ease-in-out;
+            background: #333;
+            box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+            z-index: 15;
+            background-color: royalblue;
+            animation-name: example;
+            animation-duration: 15s;
+            text-align: center;
+        }
+        
+                 
+@keyframes example {
+  0%   {background-color: orchid purple;}
+  25%  {background-color: Midnightblue;}
+  50%  {background-color: darkblue;}
+  100% {background-color: royalblue;}
+}
+
+
+        .sidebarMenuInner {
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebarMenuInner li {
+            list-style: none;
+            color: #ccc;
+            font-size: 1.2em;
+            padding: 15px;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebarMenuInner li:hover {
+            background-color: #444;
+        }
+
+        .sidebarMenuInner li span {
+            font-size: 0.9em;
+            font-weight: 300;
+            color: #bbb;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .sidebarMenuInner li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            
+        }
+
+        .sidebarMenuInner li:hover a {
+            color: #fff;
+        }
+
+        input[type="checkbox"]:checked ~ #sidebarMenu {
+            transform: translateX(0);
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .sidebarIconToggle {
+            cursor: pointer;
+            position: absolute;
+            top: 22px;
+            left: 15px;
+            width: 22px;
+            height: 22px;
+            z-index: 99;
+        }
+
+        .sidebarIconToggle .spinner {
+            height: 4px;
+            background-color: #fff;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+    .profile-image {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+   
+        <div class="header">
+        <!-- Home button (upper right corner) -->
+        <a href="index.html">
+            <img src="home.png" alt="Home" class="home-button">
+        </a>
+    </div>
+    
+    
+    <input type="checkbox" class="opensidebarMenu" id="opensidebarMenu">
+    <label for="opensidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner diagonal part-2"></div>
+        <div class="spinner horizontal"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li>
+                            <a href="Profile.html">
+                    <img src="Jhiane.jpg" alt="Profile Image" class="profile-image"> Jhiane Penanueva
+                </a>
+                <span>Web Developer</span>
+            </li>
+            <li><a href="...html">Lupang Hinirang</a></li>
+            <li><a href="Kristine.html">Bagyo Kristine</a></li>
+              <li><a href="bodyparts.html">Body Parts</a></li>
+               <li><a href="Buttons.html">Buttons</a></li>
+                 <li><a href="Pagination.html">Pagination</a></li> 
+                           <li><a href="Gwen.html">Gwen</a></li>
+            <li><a href="https://www.facebook.com/jhianechae.penanueva.1?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        
+        <button class="btn btn-1">Orange</button>
+        <button class="btn btn-2">Green</button>
+        <button class="btn btn-3">Purple</button>
+        <button class="btn btn-4">Yellow</button>
+        <button class="btn btn-5">Light Green</button>
+        <button class="btn btn-6">Red</button>
+        <button class="btn btn-7">Maroon</button>
+        <button class="btn btn-8">Dark Purple</button>
+        <button class="btn btn-9">Teal</button>
+        <button class="btn btn-10">Lime Green</button>
+        <button class="btn btn-11">Blue</button>
+        <button class="btn btn-12">Violet</button>
+        <button class="btn btn-13">Dark Gray</button>
+        <button class="btn btn-14">Aqua</button>
+        <button class="btn btn-15">Forest Green</button>
+        <button class="btn btn-16">Royal Blue</button>
+        <button class="btn btn-17">Lavender</button>
+        <button class="btn btn-18">Charcoal</button>
+        <button class="btn btn-19">Orange-Yellow</button>
+        <button class="btn btn-20">Dark Orange</button>
+        <button class="btn btn-21">Bright Red</button>
+        <button class="btn btn-22">Dark Red</button>
+        <button class="btn btn-23">Silver</button>
+        <button class="btn btn-24">Gray</button>
+        <button class="btn btn-25">Navy Blue</button>
+        <button class="btn btn-26">Black</button>
+        <button class="btn btn-27">Sky Blue</button>
+        <button class="btn btn-28">Mint</button>
+        <button class="btn btn-29">Gold</button>
+        <button class="btn btn-30">Peach</butto>
+        <button class="btn btn-31">Thistle</button>
+<button class="btn btn-32">Light Orange</button>
+<button class="btn btn-33">Sandy Brown</button>
+<button class="btn btn-34">Slate Gray</button>
+<button class="btn btn-35">Midnight Blue</button>
+<button class="btn btn-36">Peach Puff</button>
+<button class="btn btn-37">Aqua Marine</button>
+<button class="btn btn-38">Pale Pink</button>
+<button class="btn btn-39">Amethyst</button>
+<button class="btn btn-40">Deep Blue</button>
+<button class="btn btn-41">Firebrick Red</button>
+<button class="btn btn-42">Gray Blue</button>
+<button class="btn btn-43">Sea Green</button>
+<button class="btn btn-44">Emerald Green</button>
+<button class="btn btn-45">Plum</button>
+<button class="btn btn-46">Orchid Purple</button>
+<button class="btn btn-47">Rust Orange</button>
+<button class="btn btn-48">Burnt Orange</button>
+<button class="btn btn-49">Apricot</button>
+<button class="btn btn-50">White</button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+        @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+        html, body {
+            overflow-x: hidden;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: "Varela Round", sans-serif;
+            background: white;
+            color: grey;
+        }
+
+
+
+        .header {
+            width: 100%;
+            background: linear-gradient(90deg, #2E3192, #1BFFFF);
+            position: fixed;
+            height: 60px;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+          .home-button {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        
+
+        .main {
+            display: block;
+            height: 100%;
+            margin-top: 60px;
+        }
+        
+                .experience {
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: left;
+            width: 80%;
+        }
+        
+        .experience img {
+            float: left;
+            margin-right: 10px;
+            max-width: 100px;
+            border-radius: 8px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .experience h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .experience p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        
+        
+
+        .mainInner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        #sidebarMenu {
+            height: 100%;
+            position: fixed;
+            left: 0;
+            width: 250px;
+            margin-top: 60px;
+            transform: translateX(-100%);
+            transition: transform 250ms ease-in-out;
+            background: #333;
+            box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+            z-index: 15;
+            background-color: royalblue;
+            animation-name: example;
+            animation-duration: 15s;
+            text-align: center;
+        }
+        
+                 
+@keyframes example {
+  0%   {background-color: orchid purple;}
+  25%  {background-color: Midnightblue;}
+  50%  {background-color: darkblue;}
+  100% {background-color: royalblue;}
+}
+
+
+        .sidebarMenuInner {
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebarMenuInner li {
+            list-style: none;
+            color: #ccc;
+            font-size: 1.2em;
+            padding: 15px;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebarMenuInner li:hover {
+            background-color: #444;
+        }
+
+        .sidebarMenuInner li span {
+            font-size: 0.9em;
+            font-weight: 300;
+            color: #bbb;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .sidebarMenuInner li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            
+        }
+
+        .sidebarMenuInner li:hover a {
+            color: #fff;
+        }
+
+        input[type="checkbox"]:checked ~ #sidebarMenu {
+            transform: translateX(0);
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .sidebarIconToggle {
+            cursor: pointer;
+            position: absolute;
+            top: 22px;
+            left: 15px;
+            width: 22px;
+            height: 22px;
+            z-index: 99;
+        }
+
+        .sidebarIconToggle .spinner {
+            height: 4px;
+            background-color: #fff;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+       .profile-image {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+    </style>
+
+</head>
+<body>
+
+        <div class="header">
+        <!-- Home button (upper right corner) -->
+        <a href="index.html">
+            <img src="home.png" alt="Home" class="home-button">
+        </a>
+    </div>
+ 
+    <input type="checkbox" class="opensidebarMenu" id="opensidebarMenu">
+    <label for="opensidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner diagonal part-2"></div>
+        <div class="spinner horizontal"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li>
+
+             <a href="Profile.html"> <img src="Jhiane.jpg" alt="Profile Image" class="profile-image"> Jhiane Penanueva
+               </a>
+                <span>Web Developer</span>
+            </li>
+            <li><a href="...html">Lupang Hinirang</a></li>
+            <li><a href="Kristine.html">Bagyong Kristine</a></li>
+              <li><a href="bodyparts.html">Body Parts</a></li>
+              <li><a href="Buttons.html">Buttons</a></li>
+              <li><a href="Pagination.html">Pagination</a></li> 
+                    <li><a href="Gwen.html">Gwen</a></li> 
+            <li><a href="https://www.facebook.com/jhianechae.penanueva.1?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+        </ul>
+    </div>
+ 
+   
+    <div class="main clearfix">
+        <div class="experience">
+            <h2>Experiences During Bagyong Kristine</h2>
+            <img src="School.jpg" alt="Preparation Image">
+            <p>Ang mga naranasan ko sa bagyong Kristine ay ang malakas  na ulan at hangin dahil dito ay nawalan kami ng pasok at baon HAHA.</p>
+            <img src="punoo.jpg" alt="Rain Image">
+            <p>Nasira din ang ibang tanim naming halaman at mga puno dahil sa malakas na ulan at bumaha din pero hindi kami inabot dahil nasa mataas kami na lugar.</p>
+            <img src="baha1.jpg" alt="Power Outage Image">
+            <p>Ngunit dahil hindi parin naiwasan na pasukin ng kaunting tubig dahil butas sa bubong pero kahit ganun ay nagawan parin naman ng solusyon.
+Dahil sa bagyo ay nag brownout saamin kaya naman limitado lang ang pag gamit namin ng cellphone dahil hindi ito ma i chacharge dahil sa kawalan ng kuryente.</p>
+            <img src="rubs.jpg" alt="Post-Storm Image">
+            <p>Pero kahit ganon ay nakapag libang padin ako dahil meron akong  laruang Rubik's cube at meron din akong nababasang libro kaya hindi ako na boring at buti naman ay tumila din ang bagyo at bumalik na ang pasok namin.</p>
+        </div>
+    </div>
+
+</body>
+</html>

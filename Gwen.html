@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+        @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+        html, body {
+            overflow-x: hidden;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: "Varela Round", sans-serif;
+            background: white;
+            color: #fff;
+        }
+
+
+
+        .header {
+            width: 100%;
+            background: linear-gradient(90deg, #2E3192, #1BFFFF);
+            position: fixed;
+            height: 60px;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+          .home-button {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        
+        
+img {
+    height: 350px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.container {
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(1000px) rotateY(0deg);
+    animation: gallery 20s linear infinite;
+    cursor: pointer;
+}
+
+.container span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+    transform-origin: center;
+}
+
+
+@keyframes gallery {
+    0% {
+        transform: translate(-50%, -50%) perspective(2500px) rotateY(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) perspective(1500px) rotateY(360deg);
+    }
+}
+
+        .main {
+            display: block;
+            height: 100%;
+            margin-top: 60px;
+        }
+
+        .mainInner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        #sidebarMenu {
+            height: 100%;
+            position: fixed;
+            left: 0;
+            width: 250px;
+            margin-top: 60px;
+            transform: translateX(-100%);
+            transition: transform 250ms ease-in-out;
+            background: #333;
+            box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+            z-index: 15;
+            background-color: royalblue;
+            animation-name: example;
+            animation-duration: 15s;
+            text-align: center;
+        }
+        
+                 
+@keyframes example {
+  0%   {background-color: orchid purple;}
+  25%  {background-color: Midnightblue;}
+  50%  {background-color: darkblue;}
+  100% {background-color: royalblue;}
+}
+
+
+        .sidebarMenuInner {
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebarMenuInner li {
+            list-style: none;
+            color: #ccc;
+            font-size: 1.2em;
+            padding: 15px;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebarMenuInner li:hover {
+            background-color: #444;
+        }
+
+        .sidebarMenuInner li span {
+            font-size: 0.9em;
+            font-weight: 300;
+            color: #bbb;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .sidebarMenuInner li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            
+        }
+
+        .sidebarMenuInner li:hover a {
+            color: #fff;
+        }
+
+        input[type="checkbox"]:checked ~ #sidebarMenu {
+            transform: translateX(0);
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .sidebarIconToggle {
+            cursor: pointer;
+            position: absolute;
+            top: 22px;
+            left: 15px;
+            width: 22px;
+            height: 22px;
+            z-index: 99;
+        }
+
+        .sidebarIconToggle .spinner {
+            height: 4px;
+            background-color: #fff;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+       .profile-image {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+</style>
+</head>
+<body>
+    
+    
+        <div class="header">
+        <a href="index.html">
+            <img src="home.png" alt="Home" class="home-button">
+        </a>
+    </div>
+ 
+    <input type="checkbox" class="opensidebarMenu" id="opensidebarMenu">
+    <label for="opensidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner diagonal part-2"></div>
+        <div class="spinner horizontal"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li>
+                <!-- Small image added to the left of Jhiane Penanueva -->
+                <a href="Profile.html">
+                    <img src="Jhiane.jpg" alt="Profile Image" class="profile-image"> Jhiane Penanueva
+                </a>
+                <span>Web Developer</span>
+            </li>
+            <li><a href="...html">Lupang Hinirang</a></li>
+            <li><a href="Kristine.html">Bagyo Kristine</a></li>
+              <li><a href="bodyparts.html">Body Parts</a></li>
+            
+           <li><a href="Buttons.html">Buttons</a></li>
+                        
+           <li><a href="Pagination.html">Pagination</a></li>
+          <li><a href="Gwen.html">Gwen</a></li>
+            
+            <li><a href="https://www.facebook.com/jhianechae.penanueva.1?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+        </ul>
+    </div>
+
+<div class="container">
+    <span style="--i:1"><img src="19.png" alt="Image 1"></span>
+    <span style="--i:2"><img src="Gwen12.png" alt="Image 2"></span>
+    <span style="--i:3"><img src="03.png" alt="Image 3"></span>
+    <span style="--i:4"><img src="Mylovee.png" alt="Image 4"></span>
+    <span style="--i:5"><img src="5.png" alt="Image 5"></span>
+    <span style="--i:6"><img src="6.png" alt="Image 6"></span>
+    <span style="--i:7"><img src="7.png" alt="Image 7"></span>
+    <span style="--i:8"><img src="8.png" alt="Image 8"></span>
+</div>
+
+
+</body>
+</html>

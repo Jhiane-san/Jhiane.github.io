@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+        @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+        html, body {
+            overflow-x: hidden;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: "Varela Round", sans-serif;
+            background: white;
+            color: black;
+        }
+
+        .header {
+            width: 100%;
+            background: linear-gradient(90deg, #2E3192, #1BFFFF);
+            position: fixed;
+            height: 60px;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+.pagination {
+  display: inline-block;
+  font-family: none;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: solid black 1px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: solid black 1px;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:100px;
+ }
+ 
+  .univ{
+      text-align: center;
+      font-family: serif;
+      border: solid black 2px;
+      padding: 5px;
+      margin: 10px;
+        margin-top:10px ;
+  }
+
+.home-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            border-radius: 20%;
+        }
+
+        .main {
+            display: block;
+            height: 100%;
+            margin-top: 60px;
+        }
+
+        .mainInner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        #sidebarMenu {
+            height: 100%;
+            position: fixed;
+            left: 0;
+            width: 250px;
+            margin-top: 60px;
+            transform: translateX(-100%);
+            transition: transform 250ms ease-in-out;
+            background: #333;
+            box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+            z-index: 15;
+            background-color: royalblue;
+            animation-name: example;
+            animation-duration: 15s;
+            text-align: center;
+        }
+        
+                 
+@keyframes example {
+  0%   {background-color: orchid purple;}
+  25%  {background-color: Midnightblue;}
+  50%  {background-color: darkblue;}
+  100% {background-color: royalblue;}
+}
+
+        }
+
+        .sidebarMenuInner {
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebarMenuInner li {
+            list-style: none;
+            color: #ccc;
+            font-size: 1.2em;
+            padding: 15px;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+         
+        }
+
+        .sidebarMenuInner li:hover {
+            background-color: #444;
+        }
+
+        .sidebarMenuInner li span {
+            font-size: 0.9em;
+            font-weight: 300;
+            color: #bbb;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .sidebarMenuInner li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+             
+     
+        }
+
+        .sidebarMenuInner li:hover a {
+            color: #fff;
+        }
+
+        input[type="checkbox"]:checked ~ #sidebarMenu {
+            transform: translateX(0);
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .sidebarIconToggle {
+            cursor: pointer;
+            position: absolute;
+            top: 22px;
+            left: 15px;
+            width: 22px;
+            height: 22px;
+            z-index: 99;
+        }
+
+        .sidebarIconToggle .spinner {
+            height: 4px;
+            background-color: #fff;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+       .profile-image {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 8px;
+            margin-top:0px;
+            vertical-align: middle;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="header">
+     
+        <a href="index.html">
+        
+           
+            <img src="home.png" alt="Home" class="home-button">
+  </a>
+  
+    <input type="checkbox" class="opensidebarMenu" id="opensidebarMenu">
+    <label for="opensidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner diagonal part-2"></div>
+        <div class="spinner horizontal"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li>
+                  <a href="Profile.html"> <img src="Jhiane.jpg" alt="Profile Image" class="profile-image"> Jhiane Penanueva
+               </a>
+                <span>Web Developer</span>
+            </li>
+            <li><a href="...html">Lupang Hinirang</a></li>
+            <li><a href="Kristine.html">Bagyong Kristine</a></li>
+              <li><a href="bodyparts.html">Body Parts</a></li>
+               <li><a href="Buttons.html">Buttons</a></li>
+                 <li><a href="Pagination.html">Pagination</a></li> 
+                <li><a href="Gwen.html">Gwen</a></li>
+            <li><a href="https://www.facebook.com/jhianechae.penanueva.1?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+        </ul>
+    </div>
+    
+   
+  
+  <img src="On1.jpg" width="300px" height="220" class="pic"><br>
+
+<p class="univ">A short story by Group 3</p>
+<br><br>
+
+<div class="pagination">
+  <a href="Page9.html">&laquo;</a>
+  <a class="active" href="Pagination.html">1</a>
+  <a href="Page1.html">2</a>
+  <a href="Page2.html">3</a>
+  <a href="Page3.html">4</a>
+  <a href="Page4.html">5</a>
+  <a href="Page5.html">6</a>
+  <a href="Page6.html">7</a>
+  <a href="Page7.html">8</a>
+  <a href="Page8.html">9</a>
+  <a href="Page9.html">10</a>
+  <a href="Page1.html">&raquo;</a>
+</div>
